@@ -5,7 +5,7 @@
 
 </head>
 <body>
-
+<img src="RollEm.jpg" onclick="RollEm()" />
 <center><span id="FirstNumber"></span><span id="SecondNumber"></span></center>
 <script>
 function shuffle(a) 
@@ -26,9 +26,11 @@ var shufdeck  = shuffle(deck);
 shufdeck = shuffle(shufdeck);
 shufdeck = shuffle(shufdeck);
 //document.write(shufdeck + "<br>" + shufdeck.length);
-document.getElementById("FirstNumber").innerHTML = "<img src=" + shufdeck[69] + ".jpg />";
-document.getElementById("SecondNumber").innerHTML = "<img src=" + shufdeck[420] + ".jpg />";
-
+  function RollEm()
+    {
+    document.getElementById("FirstNumber").innerHTML = "<img src=" + shufdeck[69] + ".jpg />";
+    document.getElementById("SecondNumber").innerHTML = "<img src=" + shufdeck[420] + ".jpg />";
+    }
 
 
 
